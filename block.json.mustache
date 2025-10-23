@@ -1,10 +1,18 @@
-import { registerBlockType } from '@wordpress/blocks';
-import './style.css';
-import Edit from './edit';
-import save from './save';
-import metadata from './block.json';
-
-registerBlockType(metadata.name, {
-	edit: Edit,
-	save,
-});
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "spaceblocks/{{slug}}",
+	"version": "1.0.0",
+	"title": "{{title}}",
+	"category": "spaceblocks",
+	"icon": "smiley",
+	"description": "{{description}}",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "spaceblocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
