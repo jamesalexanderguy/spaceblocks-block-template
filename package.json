@@ -3,6 +3,9 @@
     "version": "1.0.0",
     "description": "Custom block template for Spaceblocks theme",
     "main": "index.js",
-    "wpScripts": true
+    "scripts": {},
+    "keywords": ["wordpress", "block"],
+    "author": "",
+    "license": "GPL-2.0-or-later"
 }
 
